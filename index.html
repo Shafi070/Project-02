@@ -4,36 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>TechWave</title>
 </head>
-<body>
+
+<body class="bg-[#1A0B2E] font-['Inter'] text-white overflow-x-hidden">
 
 <!-- navigation bar -->
 
-   <nav class="bg-[#1A0B2E] sticky top-0 z-50 border-b border-purple-10">
+   <nav class="bg-[#1A0B2E]/90 backdrop-blur-md sticky top-0 z-50 border-b border-white/10">
   <div class="max-w-7xl mx-auto px-6 lg:px-8">
     <div class="flex justify-between items-center h-20 md:h-24">
-      
       <div class="flex-shrink-0">
         <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight cursor-pointer">
-          <span class="text-white">Tech</span><span class="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">Wave</span>
+          <span>Tech</span><span class="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">Wave</span>
         </h1>
       </div>
 
       <div class="hidden lg:flex items-center absolute left-1/2 -translate-x-1/2 space-x-12">
-        <a href="#about" class="text-white/80 hover:text-white font-medium transition-colors duration-200">About</a>
-        <a href="#episodes" class="text-white/80 hover:text-white font-medium transition-colors duration-200">Episodes</a>
-        <a href="#host" class="text-white/80 hover:text-white font-medium transition-colors duration-200">Host</a>
+        <a href="#about" class="text-white/80 hover:text-white font-medium transition-colors">About</a>
+        <a href="#episodes" class="text-white/80 hover:text-white font-medium transition-colors">Episodes</a>
+        <a href="#host" class="text-white/80 hover:text-white font-medium transition-colors">Host</a>
       </div>
 
       <div class="hidden lg:block">
-        <button class="group flex items-center gap-3 px-7 py-2.5 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 text-white font-bold rounded-full shadow-lg shadow-purple-900/20 hover:scale-105 active:scale-95 transition-all duration-300">
+        <button class="group flex items-center gap-3 px-7 py-2.5 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 font-bold rounded-full shadow-lg hover:scale-105 transition-all">
           <span>Subscribe</span>
-          <img src="./assets/ArrowRight.png" alt="" class="w-4 h-4 object-contain group-hover:translate-x-1 transition-transform">
+          <img src="./assets/ArrowRight.png" alt="" class="w-4 h-4 group-hover:translate-x-1 transition-transform">
         </button>
       </div>
 
@@ -42,108 +42,72 @@
           <img src="./assets/hamburger-menu.png" alt="Menu" class="w-8 h-8">
         </button>
       </div>
-
     </div>
   </div>
 </nav>
 
 <!-- banner section -->
 
-<section class="relative bg-[#1A0B2E] min-h-[600px] flex items-center justify-center overflow-hidden">
-  
+<section class="relative min-h-[29rem] lg:min-h-[48rem] flex items-center justify-center overflow-hidden">
   <div class="absolute inset-0 z-0">
     <img src="./assets/hero-bg.png" alt="" class="w-full h-full object-cover opacity-40">
   </div>
 
-  <div class="relative z-10 w-full max-w-4xl mx-auto flex flex-col items-center text-center">
-    
-    <div class="relative mb-10">
-      
-      <div class="absolute top-6 -right-0 z-50">
-        <span class="bg-[#4ade80] text-[#0f172a] text-[10px] font-black px-3 py-1 rounded-full shadow-lg">
-          NEW
-        </span>
+  <div class="relative z-10 mx-auto flex flex-col items-center justify-center text-center px-4 w-full max-w-[25rem] h-[24rem] lg:max-w-[34rem] lg:h-[34rem]">
+    <div class="relative mb-6">
+      <div class="absolute top-2 right-2 md:top-8 md:right-6 z-50">
+        <span class="bg-[#4ade80] text-[#0f172a] text-[10px] font-black px-3 py-1 rounded-full shadow-lg">NEW</span>
       </div>
-      
-      <div class="relative w-48 h-48 md:w-64 md:h-64 flex items-center justify-center mx-auto">
-  
-  <img src="./assets/hero-circle.png" alt="Background Circle" class="absolute inset-0 w-full h-full object-contain">
- 3
-  <img 
-    src="./assets/microphone.png" 
-    alt="Mic" 
-    class="relative z-20 w-24 md:w-32 object-contain animate-[spin_20s_linear_infinite]"
-  >
-
-</div>
+      <div class="relative w-[12.5rem] h-[12.5rem] lg:w-[22rem] lg:h-[22rem] flex items-center justify-center mx-auto">
+        <img src="./assets/hero-circle.png" alt="" class="absolute inset-0 w-full h-full object-contain">
+        <img src="./assets/microphone.png" alt="Mic" class="relative z-20 object-contain animate-[spin_20s_linear_infinite] w-[5rem] h-[5rem] lg:w-[12.5rem] lg:h-[12.5rem]">
+      </div>
     </div>
 
-    <h1 class="text-white text-2xl md:text-7xl font-bold mb-4 tracking-tight">TechWave</h1>
-    
-    <p class="text-white/80 text-sm md:text-lg max-w-sm md:max-w-md mb-10 leading-relaxed">
-      Your daily dose of tech insights, productivity hacks, and personal growth
-    </p>
+    <h1 class="text-3xl md:text-6xl font-bold mb-2 tracking-tight">TechWave</h1>
+    <p class="text-white/80 text-xs md:text-base max-w-[250px] md:max-w-md mb-6 leading-relaxed">Your daily dose of tech insights, productivity hacks, and personal growth</p>
 
-    <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4 sm:px-0">
-      <button class="flex items-center justify-center gap-3 px-8 py-3 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 text-white font-bold rounded-full shadow-lg">
-        <img src="./assets/spotify.png" alt="" class="w-5 h-5 brightness-0 invert">
-        <span>Listen On Spotify</span>
+    <div class="flex flex-row items-center justify-center gap-3 w-full">
+      <button class="flex items-center justify-center gap-2 w-36 sm:w-40 h-11 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 text-sm font-bold rounded-full shadow-lg hover:scale-105 transition-transform">
+        <img src="./assets/spotify.png" alt="" class="w-4 h-4 brightness-0 invert">
+        <span class="whitespace-nowrap">Spotify</span>
       </button>
-
-      <button class="flex items-center justify-center gap-3 px-8 py-3 border border-white/40 text-white font-bold rounded-full hover:bg-white/10 transition">
-        <img src="./assets/message.png" alt="" class="w-5 h-5 brightness-0 invert">
+      <button class="flex items-center justify-center gap-2 w-36 sm:w-40 h-11 border border-[#4ade80] text-[#4ade80] text-sm font-bold rounded-full hover:bg-[#4ade80]/10 transition-all">
+        <img src="./assets/message.png" alt="" class="w-4 h-4">
         <span>Subscribe</span>
       </button>
     </div>
-
   </div>
 </section>
 
 <!-- about section -->
 
-<section class="bg-[#1A0B2E] w-full min-h-[646px] font-['Inter'] flex items-center justify-center overflow-hidden">
-  
-  <div class="w-[1200px] h-[480px] mx-auto flex flex-col justify-between">
-    
+<section class="w-full py-20 flex items-center justify-center border-t border-white/5">
+  <div class="max-w-6xl px-6 mx-auto flex flex-col gap-12">
     <div class="text-center">
-      <h2 class="text-white text-3xl md:text-4xl font-bold mb-6">About The Podcast</h2>
-      <p class="text-white/70 text-base leading-relaxed max-w-2xl mx-auto">
-        TechWave is your premier destination for the latest in technology, productivity hacks, and personal growth. Our goal is to empower you with knowledge through deep-dive conversations with industry leaders.
-      </p>
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">About The Podcast</h2>
+      <p class="text-white/70 text-base leading-relaxed max-w-2xl mx-auto">TechWave is your premier destination for the latest in technology, productivity hacks, and personal growth.</p>
     </div>
 
-    <div class="h-px w-full mx-auto bg-white/20"></div>
+    <div class="h-px w-full bg-white/20"></div>
 
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 text-center">
-      
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
       <div class="flex flex-col items-center">
-        <div class="text-[#4ade80] text-4xl font-black mb-2 flex items-center gap-1">
-          150K <i class="fa-solid fa-plus text-2xl"></i>
-        </div>
+        <div class="text-[#4ade80] text-4xl font-black mb-2 flex items-center gap-1">150K+</div>
         <p class="text-white/50 text-[10px] uppercase tracking-widest font-bold">Monthly Listens</p>
       </div>
-
       <div class="flex flex-col items-center">
-        <div class="text-[#4ade80] text-4xl font-black mb-2 flex items-center gap-1">
-          200 <i class="fa-solid fa-plus text-2xl"></i>
-        </div>
+        <div class="text-[#4ade80] text-4xl font-black mb-2 flex items-center gap-1">200+</div>
         <p class="text-white/50 text-[10px] uppercase tracking-widest font-bold">Episodes Released</p>
       </div>
-
       <div class="flex flex-col items-center">
-        <div class="text-[#4ade80] text-4xl font-black mb-2 flex items-center gap-2">
-          4.9 <i class="fa-sharp fa-solid fa-star text-2xl"></i>
-        </div>
+        <div class="text-[#4ade80] text-4xl font-black mb-2 flex items-center gap-2">4.9 <i class="fa-solid fa-star text-2xl"></i></div>
         <p class="text-white/50 text-[10px] uppercase tracking-widest font-bold">Average Rating</p>
       </div>
-
       <div class="flex flex-col items-center">
-        <div class="text-[#4ade80] text-4xl font-black mb-2 flex items-center gap-1">
-          50 <i class="fa-solid fa-plus text-2xl"></i>
-        </div>
+        <div class="text-[#4ade80] text-4xl font-black mb-2 flex items-center gap-1">50+</div>
         <p class="text-white/50 text-[10px] uppercase tracking-widest font-bold">Industry Guests</p>
       </div>
-
     </div>
   </div>
 </section>
@@ -198,51 +162,74 @@
 
 <section class="bg-[#1A0B2E] w-full lg:h-[1276px] py-16 lg:py-0 flex flex-col items-center justify-center font-['Inter'] px-6 lg:px-0">
 
-  <div class="w-full lg:w-[1200px] lg:h-[538px] flex flex-col">
-    <h2 class="text-white text-3xl md:text-4xl font-bold text-center mb-10">Featured Episodes</h2>
+<div class="max-w-6xl mx-auto">
+    <h2 class="text-white text-3xl md:text-4xl font-bold text-center mb-12">Featured Episodes</h2>
     
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 h-full">
-      <div class="bg-white/5 rounded-2xl border border-white/10 overflow-hidden flex flex-col group">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      
+      <div class="bg-white/5 rounded-2xl border border-white/10 overflow-hidden flex flex-col hover:border-[#4ade80]/50 transition-all duration-300">
         <div class="relative w-full aspect-video">
-          <img src="https://img.youtube.com/vi/TPqmGfulrfw/maxresdefault.jpg" class="w-full h-full object-cover">
+          <iframe 
+            class="absolute inset-0 w-full h-full"
+            src="https://www.youtube.com/embed/TPqmGfulrfw" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
         </div>
         <div class="p-6 flex flex-col flex-grow">
-          <h3 class="text-white text-lg font-bold mb-2">CES 2026 Actually Has Some Bangers?</h3>
-          <p class="text-white/70 text-lg mb-4 flex-grow">Marquez and the Waveform crew dive into the tech highlights of 2026.</p>
-          <div class="flex items-center gap-2 text-[#4ade80] font-bold text-lg">
-            <img src="./assets/clock.png" class="w-4 h-4">
+          <h3 class="text-white text-xl font-bold mb-3">CES 2026 Highlights</h3>
+          <p class="text-white/70 text-sm mb-6 flex-grow">Marquez and the Waveform crew dive into the tech highlights of 2026 and what to expect next.</p>
+          <div class="flex items-center gap-2 text-[#4ade80] font-bold">
+            <img src="./assets/clock.png" alt="" class="w-4 h-4">
             <span>154 Minutes</span>
           </div>
         </div>
       </div>
 
-      <div class="bg-white/5 rounded-2xl border border-white/10 overflow-hidden flex flex-col group">
+      <div class="bg-white/5 rounded-2xl border border-white/10 overflow-hidden flex flex-col hover:border-[#4ade80]/50 transition-all duration-300">
         <div class="relative w-full aspect-video">
-          <img src="https://img.youtube.com/vi/ndXr0O2rWHc/maxresdefault.jpg" class="w-full h-full object-cover">
+          <iframe 
+            class="absolute inset-0 w-full h-full"
+            src="https://www.youtube.com/embed/ndXr0O2rWHc" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
         </div>
         <div class="p-6 flex flex-col flex-grow">
-          <h3 class="text-white text-lg font-bold mb-2">Is the Steam Machine Too Expensive?</h3>
-          <p class="text-white/70 text-lg mb-4 flex-grow">A deep dive into pricing rumors and Valve's 2026 hardware market share.</p>
-          <div class="flex items-center gap-2 text-[#4ade80] font-bold text-lg">
-            <img src="./assets/clock.png" class="w-4 h-4">
-            <span>13 Minutes</span>
+          <h3 class="text-white text-xl font-bold mb-3">Valve's Steam Machine</h3>
+          <p class="text-white/70 text-sm mb-6 flex-grow">A deep dive into pricing rumors and Valve's 2026 hardware market share strategies.</p>
+          <div class="flex items-center gap-2 text-[#4ade80] font-bold">
+            <img src="./assets/clock.png" alt="" class="w-4 h-4">
+            <span>113 Minutes</span>
           </div>
         </div>
       </div>
 
-      <div class="bg-white/5 rounded-2xl border border-white/10 overflow-hidden flex flex-col group">
+      <div class="bg-white/5 rounded-2xl border border-white/10 overflow-hidden flex flex-col hover:border-[#4ade80]/50 transition-all duration-300">
         <div class="relative w-full aspect-video">
-          <img src="https://img.youtube.com/vi/yOXcF3hFc-w/maxresdefault.jpg" class="w-full h-full object-cover">
+          <iframe 
+            class="absolute inset-0 w-full h-full"
+            src="https://www.youtube.com/embed/yOXcF3hFc-w" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
         </div>
         <div class="p-6 flex flex-col flex-grow">
-          <h3 class="text-white text-lg font-bold mb-2">The Future of AI in Bangladesh</h3>
-          <p class="text-white/70 text-lg mb-4 flex-grow">Discussing education, job markets, and tech leader adaptation.</p>
-          <div class="flex items-center gap-2 text-[#4ade80] font-bold text-lg">
-            <img src="./assets/clock.png" class="w-4 h-4">
+          <h3 class="text-white text-xl font-bold mb-3">AI in Bangladesh</h3>
+          <p class="text-white/70 text-sm mb-6 flex-grow">Discussing education, job markets, and how local tech leaders are adapting to AI.</p>
+          <div class="flex items-center gap-2 text-[#4ade80] font-bold">
+            <img src="./assets/clock.png" alt="" class="w-4 h-4">
             <span>79 Minutes</span>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 
@@ -274,7 +261,7 @@
 </section>
 
 <!-- Footer Section -->
-<footer class="relative bg-[#1A0B2E] w-full py-16 font-['Inter'] overflow-hidden">
+<footer class="relative bg-[#1A0B2E] w-full min-h-[20rem] lg:min-h-[412px] flex items-center justify-center font-['Inter'] overflow-hidden">
   
   
   <div class="absolute inset-0 z-0">
